@@ -26,7 +26,7 @@ from .pluginmanager import load_module
 from .tools import create_supergroup
 
 ENV = bool(os.environ.get("ENV", False))
-LOGS = logging.getLogger("اعداد جمثون")
+LOGS = logging.getLogger("اعداد تراك")
 cmdhr = Config.COMMAND_HAND_LER
 
 if ENV:
@@ -54,9 +54,9 @@ async def saves():
     except Exception as e:
         print(str(e))
     try:
-        await sbb_b(JoinChannelRequest("@jmthon"))
-        await sbb_b(JoinChannelRequest("@RR7PP"))
-        await sbb_b(JoinChannelRequest("@thejmthon"))
+        await sbb_b(JoinChannelRequest("@cn_world"))
+        await sbb_b(JoinChannelRequest("@cn_world"))
+        await sbb_b(JoinChannelRequest("@cn_world"))
     except BaseException:
         pass
 
@@ -95,7 +95,7 @@ async def startupmessage():
                 BOTLOG_CHATID,
                 "https://graph.org//file/c20c4f492da1811e1bef0.jpg",
                 caption="**تم تشغيل سورس جمثون بنجاح لعرض الاوامر ارسل .الاوامر**",
-                buttons=[(Button.url("كروب المساعدة", "https://t.me/jmthon_support"),)],
+                buttons=[(Button.url("للمساعدة", "https://t.me/jj8jjj8"),)],
             )
     except Exception as e:
         LOGS.error(e)
@@ -238,7 +238,7 @@ async def verifyLoggerGroup():
         descript = "⪼ هذه هي مجموعه الحفظ الخاصه بك لا تحذفها ابدا  𓆰."
         photobt = await sbb_b.upload_file(file="razan/pic/Jmthonp.jpg")
         _, groupid = await create_supergroup(
-            "كروب بوت جمثون", sbb_b, Config.TG_BOT_USERNAME, descript, photobt
+            "كروب بوت تراك", sbb_b, Config.TG_BOT_USERNAME, descript, photobt
         )
         addgvar("PRIVATE_GROUP_BOT_API_ID", groupid)
         print("تم انشاء كروب الحفظ بنجاح")
