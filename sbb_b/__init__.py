@@ -14,12 +14,12 @@ from .sql_helper.globals import addgvar, delgvar, gvarstatus
 
 __version__ = "3.2.0"
 __license__ = "GNU Affero General Public License v3.0"
-__author__ = "سورس جمثون <https://github.com/jmthonen/sbb_b0>"
-__copyright__ = f" حقوق سورس جمثون (C) 2020 - 2022  {__author__}"
+__author__ = "سورس تراك <https://github.com/dyler2/track>"
+__copyright__ = f" حقوق سورس تراك (C) 2020 - 2022  {__author__}"
 
 sbb_b.version = __version__
 sbb_b.tgbot.version = __version__
-LOGS = logging.getLogger("سورس جمثون")
+LOGS = logging.getLogger("سورس تراك")
 bot = sbb_b
 tbot = tgbot
 
